@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+       body {
+      background-color: #f2f2f2;
+      color: #333;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: larger;
+    }      
+    form {
+        background-color: #333;
+        padding: 20px;
+        height: 60%;
+        text-align: center;
+        width: 500px;
+        margin: 50px auto;
+    }
+    input {
+      width:400px;
+      height: 15px;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: larger;
+      color: #333;
+    }  
+
+    button {
+      padding: 10px 20px;
+      background-color: #9C27B0;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: larger;
+    }
+      </style>
     <title>Login Page</title>
   </head>
   <body>
@@ -9,7 +47,10 @@
     <% } %>
     <form action="/login" method="post">
       <input type="text" name="username" placeholder="Username">
+      <br>
       <input type="password" name="password" placeholder="Password">
+      <br>
+    
       <button type="submit">Login</button>
     </form>
   </body>
